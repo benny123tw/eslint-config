@@ -1,0 +1,20 @@
+{
+  "name": "@benny/prettier-config",
+  "version": "0.0.1",
+  "description": "Prettier config for Benny personal usage",
+  "repository": "eslint-config",
+  "license": "MIT",
+  "main": "index.cjs",
+  "exports": {
+    ".": "./index.cjs"
+  },
+  "files": [
+    "index.cjs"
+  ],
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  }
+}

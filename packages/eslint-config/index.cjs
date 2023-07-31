@@ -1,7 +1,8 @@
 require('@rushstack/eslint-patch/modern-module-resolution')
+const prettierRules = require('@benny/prettier-config')
 
 /** @type {import('eslint').ESLint.ConfigData}  */
-module.exports = {
+const config = {
   parserOptions: {
     ecmaVersion: 'latest',
     parser: {
@@ -21,8 +22,17 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:vue/vue3-recommended'
+    'plugin:vue/vue3-recommended',
+    'plugin:prettier/recommended',
   ],
+  rules: {
+    "prettier/prettier": [
+      "error",
+      {
+        ...prettierRules
+      }
+    ]
+  },
   overrides: [
     {
       files: ['*.ts', '*.tsx', '*.mts', '*.cts', '*.vue'],
@@ -80,3 +90,5 @@ module.exports = {
     }
   ]
 }
+
+module.exports = config;

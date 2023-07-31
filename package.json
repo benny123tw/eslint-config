@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "scripts": {
-    "lint": "eslint . --config=packages/eslint-config/index.js",
+    "lint": "eslint . --config=packages/eslint-config/index.cjs",
     "release": "pnpm test && pnpm publish -r",
     "test": "pnpm lint && vitest run"
   },

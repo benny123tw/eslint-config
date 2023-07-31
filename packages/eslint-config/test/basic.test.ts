@@ -6,10 +6,10 @@ describe('eslint-config', () => {
   it('loads config in eslint to validate all rule syntax is correct', async () => {
     const cli = new ESLint({
       useEslintrc: false,
-      overrideConfigFile: fileURLToPath(new URL('../index.js', import.meta.url)),
+      overrideConfigFile: fileURLToPath(new URL('../index.cjs', import.meta.url)),
     })
 
-    const code = 'const foo = 1\nconst bar = function () {}\nbar(foo)\n'
+    const code = "const foo = 1\nconst bar = function () {}\nbar(foo)\nconst dummy = 'test'\n"
 
     const [{ errorCount }] = await cli.lintText(code, { filePath: 'test.ts' })
     expect(errorCount).toEqual(0)
