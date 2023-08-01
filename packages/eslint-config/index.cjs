@@ -1,5 +1,5 @@
 require('@rushstack/eslint-patch/modern-module-resolution')
-const prettierRules = require('@benny/prettier-config')
+const prettierRules = require('@benny123tw/prettier-config')
 
 /** @type {import('eslint').ESLint.ConfigData}  */
 const config = {

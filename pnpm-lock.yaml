@@ -20,9 +20,6 @@ importers:
 
   packages/eslint-config:
     dependencies:
-      '@benny/prettier-config':
-        specifier: workspace:^
-        version: link:../prettier-config
       '@rushstack/eslint-patch':
         specifier: ^1.3.2
         version: 1.3.2
@@ -39,6 +36,9 @@ importers:
         specifier: ^5.1.3
         version: 5.1.3
     devDependencies:
+      '@benny123tw/prettier-config':
+        specifier: workspace:^
+        version: link:../prettier-config
       '@types/eslint':
         specifier: ^8.40.2
         version: 8.40.2
