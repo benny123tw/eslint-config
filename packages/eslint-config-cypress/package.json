@@ -1,6 +1,6 @@
 {
   "name": "@benny123tw/eslint-config-cypress",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ESLint Cypress config for Benny personal usage",
   "author": "Benny Yen <benny123tw@gmail.com>",
   "license": "MIT",
