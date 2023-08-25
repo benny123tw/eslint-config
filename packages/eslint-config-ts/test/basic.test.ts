@@ -1,5 +1,5 @@
 import { fileURLToPath } from 'node:url'
-import { it, expect, describe } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { ESLint } from 'eslint'
 
 describe('eslint-config', () => {

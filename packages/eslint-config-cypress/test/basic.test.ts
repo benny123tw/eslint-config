@@ -15,6 +15,6 @@ describe('eslint-config', () => {
     expect(errorCount).toEqual(0)
 
     const rules = await cli.calculateConfigForFile('test.ts')
-    expect(rules.plugins).toContain('vue')
+    expect(rules.plugins).toContain('cypress')
   })
 })

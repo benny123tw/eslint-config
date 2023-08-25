@@ -1,19 +1,26 @@
 {
+  "version": "0.0.2",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
+  "packageManager": "pnpm@8.6.12",
   "scripts": {
-    "lint": "eslint . --config=packages/eslint-config/index.cjs",
+    "lint": "eslint . --config=packages/eslint-config-ts/index.cjs",
     "release": "pnpm test && bumpp -r && pnpm publish -r --no-git-checks",
     "test": "pnpm lint && vitest run"
   },
   "devDependencies": {
+    "@benny123tw/eslint-config-ts": "workspace:*",
     "bumpp": "^9.2.0",
-    "eslint": "^8.43.0",
-    "vitest": "^0.32.2",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "vitest": "^0.34.3",
     "vue": "^3.3.4"
   },
-  "packageManager": "pnpm@8.6.2",
-  "version": "0.0.2"
+  "eslintConfig": {
+    "extends": [
+      "@benny123tw/eslint-config-ts"
+    ]
+  }
 }

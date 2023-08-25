@@ -3,20 +3,21 @@
   "version": "0.0.2",
   "description": "Prettier config for Benny personal usage",
   "author": "Benny Yen <benny123tw@gmail.com>",
-  "repository": "https://github.com/benny123tw/eslint-config.git",
-  "homepage": "https://github.com/benny123tw/eslint-config",
   "license": "MIT",
-  "main": "index.cjs",
+  "homepage": "https://github.com/benny123tw/eslint-config",
+  "repository": "https://github.com/benny123tw/eslint-config.git",
   "exports": {
     ".": "./index.cjs"
   },
+  "main": "index.cjs",
+  "types": "index.d.ts",
   "files": [
     "index.cjs"
   ],
-  "devDependencies": {
-    "prettier": "^3.0.0"
-  },
   "peerDependencies": {
     "prettier": ">= 3.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.2"
   }
 }

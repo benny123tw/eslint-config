@@ -10,12 +10,12 @@ const config = {
       jsx: 'espree',
 
       ts: '@typescript-eslint/parser',
-      tsx: '@typescript-eslint/parser'
+      tsx: '@typescript-eslint/parser',
     },
     extraFileExtensions: ['.vue'],
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   env: { node: true },
   plugins: ['@typescript-eslint'],
@@ -26,12 +26,12 @@ const config = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    "prettier/prettier": [
-      "error",
+    'prettier/prettier': [
+      'error',
       {
-        ...prettierRules
-      }
-    ]
+        ...prettierRules,
+      },
+    ],
   },
   overrides: [
     {
@@ -40,8 +40,8 @@ const config = {
         // The core 'no-unused-vars' rules (in the eslint:recommended ruleset)
         // does not work with type definitions.
         'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': 'warn'
-      }
+        '@typescript-eslint/no-unused-vars': 'warn',
+      },
     },
     {
       // Include typescript eslint rules in *.vue files
@@ -79,16 +79,16 @@ const config = {
         '**/app.{js,ts,jsx,tsx,vue}',
         '**/error.{js,ts,jsx,tsx,vue}',
         // These files should have multiple words in their names as they are within subdirectories.
-        '**/components/*/**/*.{js,ts,jsx,tsx,vue}'
+        '**/components/*/**/*.{js,ts,jsx,tsx,vue}',
       ],
-      rules: { 'vue/multi-word-component-names': 'off' }
+      rules: { 'vue/multi-word-component-names': 'off' },
     },
     {
       // Pages and layouts are required to have a single root element if transitions are enabled.
       files: ['**/pages/**/*.{js,ts,jsx,tsx,vue}', '**/layouts/**/*.{js,ts,jsx,tsx,vue}'],
-      rules: { 'vue/no-multiple-template-root': 'error' }
-    }
-  ]
+      rules: { 'vue/no-multiple-template-root': 'error' },
+    },
+  ],
 }
 
-module.exports = config;
+module.exports = config
