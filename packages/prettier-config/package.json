@@ -2,7 +2,9 @@
   "name": "@benny123tw/prettier-config",
   "version": "0.0.1",
   "description": "Prettier config for Benny personal usage",
-  "repository": "benny123tw/eslint-config",
+  "author": "Benny Yen <benny123tw@gmail.com>",
+  "repository": "https://github.com/benny123tw/eslint-config.git",
+  "homepage": "https://github.com/benny123tw/eslint-config",
   "license": "MIT",
   "main": "index.cjs",
   "exports": {
@@ -15,6 +17,6 @@
     "prettier": "^3.0.0"
   },
   "peerDependencies": {
-    "prettier": "^3.0.0"
+    "prettier": ">= 3.0.0"
   }
 }

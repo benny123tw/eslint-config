@@ -1,15 +1,12 @@
 {
-  "name": "@benny123tw/eslint-config",
+  "name": "@benny123tw/eslint-config-ts",
   "version": "0.0.1",
-  "description": "ESLint config for Benny personal usage",
+  "description": "ESLint Typescript config for Benny personal usage",
   "author": "Benny Yen <benny123tw@gmail.com>",
   "repository": "https://github.com/benny123tw/eslint-config.git",
   "homepage": "https://github.com/benny123tw/eslint-config",
   "license": "MIT",
   "main": "index.cjs",
-  "keywords": [
-    "eslint-config"
-  ],
   "exports": {
     ".": "./index.cjs"
   },
@@ -17,14 +14,8 @@
     "index.cjs"
   ],
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.3.2",
-    "@typescript-eslint/eslint-plugin": "^5.59.11",
-    "@typescript-eslint/parser": "^5.59.11",
-    "@benny123tw/prettier-config": "workspace:^",
-    "eslint-plugin-vue": "^9.14.1",
-    "typescript": "^5.1.3",
-    "eslint-config-prettier": "^8.9.0",
-    "eslint-plugin-prettier": "^5.0.0"
+    "@antfu/eslint-config-ts": "^0.41.0",
+    "@benny123tw/prettier-config": "workspace:*"
   },
   "devDependencies": {
     "@types/eslint": "^8.40.2",
