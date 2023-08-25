@@ -20,7 +20,9 @@
   "dependencies": {
     "@antfu/eslint-config-ts": "^0.41.0",
     "@benny123tw/prettier-config": "workspace:*",
-    "eslint-plugin-cypress": "^2.14.0"
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.14.0",
+    "eslint-plugin-prettier": "^5.0.0"
   },
   "devDependencies": {
     "@types/eslint": "^8.44.2",
