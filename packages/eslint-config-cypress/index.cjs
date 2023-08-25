@@ -14,7 +14,7 @@ const config = {
 
     // See: https://typescript-eslint.io/rules/brace-style/
     'brace-style': 'off',
-    '@typescript-eslint/brace-style': 'error',
+    '@typescript-eslint/brace-style': 'off',
 
     // cypress
     'cypress/no-assigning-return-values': 'error',
