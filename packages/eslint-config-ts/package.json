@@ -1,6 +1,6 @@
 {
   "name": "@benny123tw/eslint-config-ts",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "ESLint Typescript config for Benny personal usage",
   "author": "Benny Yen <benny123tw@gmail.com>",
   "license": "MIT",
